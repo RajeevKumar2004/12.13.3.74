@@ -212,39 +212,22 @@ A bag contain 5 red and 3 blue balls. If 3 balls are drawn at random without rep
 \begin{enumerate}
 	\item${\frac{45}{196}}$\qquad\item${\frac{135}{392}}$\qquad\item${\frac{15}{56}}$\qquad\item${\frac{15}{29}}$
 \end{enumerate}
-
-\solution
-Let $X$, $Y$ and $Z$ denote the random variables for first, second and third draw, respectively as follows:\\
-\begin{table}[!h]
-	\centering 
-        \input{./tables/table.tex}
-        \caption{Random Variables}
-        \label{tab:rv}
-\end{table}
-For event $E$ having exactly one red ball to be drawn, following coditions will be followed:
-\begin{enumerate}
-	\item $E_1$: First ball drawn is red, rest are blue
-	\item $E_2$: Second ball drawm is red, rest are blue
-        \item $E_3$: Third ball drawn is red, rest are blue
-\end{enumerate}
-Therefore,
+\solution\\
+Let,
 \begin{align}
-	\pr{E_1}&=\pr{X=0,Y=1,Z=1}\\
-	&=\frac{5}{8}\cdot\frac{3}{7}\cdot\frac{2}{6}\\
-	&=\frac{5}{56}\\
-	\pr{E_2}&=\pr{X=1,Y=0,Z=1}\\
-	&=\frac{3}{8}\cdot\frac{5}{7}\cdot\frac{2}{6}\\
-	&=\frac{5}{56}\\
-	\pr{E_3}&=\pr{X=1,Y=1,Z=0}\\
-	&=\frac{3}{8}\cdot\frac{2}{7}\cdot\frac{5}{6}\\
-	&=\frac{5}{56}
+N &= R + B\\
+n &= r + b
 \end{align}
-The probability of event that exactly one red ball is drawn is given by:
+where R,B and r,b represents the number of Red and Blue balls respectively within N, n. Then
 \begin{align}
-        \pr{E}&=\pr{E_1}+\pr{E_2}+\pr{E_3}\\
-	&=\frac{5}{56}+\frac{5}{56}+\frac{5}{56}\\
-	&=\frac{15}{56}
+\pr{r,b} = \frac{\comb{R}{r}\comb{B}{b}}{\comb{R+B}{r+b}}
 \end{align}
+So,Probability of getting exactly 1 Red ball,
+\begin{align}
+\pr{1,2} &= \frac{\comb{5}{1}\comb{3}{2}}{\comb{8}{3}}\\,
+&= \frac{15}{56}
+\end{align} 
+$\therefore$ Option (3) is correct.
 \end{document}
 
 
